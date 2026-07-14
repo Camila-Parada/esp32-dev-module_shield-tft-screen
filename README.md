@@ -4,23 +4,21 @@ Proyecto para mostrar imágenes JPG en una **pantalla TFT de 2.4" con bus parale
 
 La ESP32 se conecta a la red, baja una imagen `.jpg` desde una URL *raw* de GitHub, la decodifica sobre la marcha y la pinta en la pantalla.
 
-![Foto del proyecto funcionando](docs/demo.jpg)
+![Foto del proyecto funcionando](./imagenes/demo.jfif)
 
 ---
 
 ## Hardware
 
-| Componente | Detalle |
-|---|---|
-| Microcontrolador | [ESP32 DevKit V1 (30 pines, módulo ESP-WROOM-32)](https://afel.cl/products/esp32-devkit-v1-30-pines-microusb) |
+
+* Microcontrolador: [ESP32 DevKit V1 (30 pines, módulo ESP-WROOM-32)](https://afel.cl/products/esp32-devkit-v1-30-pines-microusb) 
 
 <img width="1536" height="752" alt="image" src="https://github.com/user-attachments/assets/dce5ceca-b734-44fc-8742-5b335bda32d6" />
 
-| Pantalla | [Shield TFT 2.4", controlador **ILI9341**](https://afel.cl/products/shield-tft-pantalla-2-4-display-para-arduino), **bus paralelo 8 bits** |
+* Pantalla: [Shield TFT 2.4", controlador **ILI9341**](https://afel.cl/products/shield-tft-pantalla-2-4-display-para-arduino)
 
 <img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/4535f411-c8e3-43db-a0cc-d148e4bd7a6c" />
 
-| Alimentación | Vía USB de la ESP32 |
 
 > **Importante sobre la pantalla:** estas shields rojas de 2.4" formato Arduino UNO usan un **bus paralelo de 8 bits** (pines `LCD_D0`–`LCD_D7` + `WR/RD/RS/CS/RST`), **no SPI**. Los pines `SD_xx` de la placa son solo para la ranura microSD, no para el display. Confírmalo mirando las etiquetas serigrafiadas en la parte trasera.
 
